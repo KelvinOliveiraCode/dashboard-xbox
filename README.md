@@ -1,90 +1,59 @@
-# Dashboard-Xbox — Dashboard de vendas do Xbox Game Pass em Excel
+# Dashboard Xbox — Vendas Xbox Game Pass em Excel
 
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
-![XLSX](https://img.shields.io/badge/.xlsx-workbook-1D6F42?style=flat-square)
-![SUMIFS](https://img.shields.io/badge/agrega%C3%A7%C3%A3o-SUMIFS-107C41?style=flat-square)
-![Zero deps](https://img.shields.io/badge/depend%C3%AAncias-0-2EA44F?style=flat-square)
+![status: concluido](https://img.shields.io/badge/status-concluido-green)  
+![licenca: MIT](https://img.shields.io/badge/licenca-MIT-blue)
 
-Dashboard de vendas executivo em **Microsoft Excel** modelando a operação comercial do **Xbox Game Pass** — planos Core, Standard e Ultimate, add-ons e ciclos de faturamento. Arquitetura de pastas de trabalho em 5 abas com separação rígida entre parâmetros, base transacional, camada de cálculo (`SUMIFS`) e apresentação: editar uma célula amarela recalcula base, KPIs e os 6 gráficos executivos — simulação de cenários sem tocar em fórmula.
+### Descrição
+Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários.
 
----
+### O que faz
+Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários.
 
-## 🇧🇷 Português
-
-### Arquitetura do workbook
-
-| Aba | Função |
-|-----|--------|
-| **Parâmetros** | Única aba editável. Células em amarelo: preços por plano, metas, descontos de campanha, CAC e câmbio USD/BRL. |
-| **Base de Dados** | Transações demo/artificiais. As colunas de Receita, Custo e Lucro são fórmulas que puxam os preços da aba Parâmetros — a base nunca guarda valores estáticos. |
-| **Cálculos** | Camada de agregação via `SUMIFS` por Plano, Região, Ciclo de Faturamento, Add-on, Novos/Renovação e Evolução Mensal. |
-| **Dashboard** | Cartões de KPI + 6 gráficos executivos que reagem aos Parâmetros. |
-| **Instruções** | Guia de uso embutido. |
-
-### KPIs
-
-- **Receita Total (R$)** · **Assinantes (un.)** · **Lucro Total (R$)**
-- **ARPU (R$)** · **Ticket Médio (R$)** · **Margem de Lucro**
-- **% de Meta Atingida** — Receita, Assinantes e Câmbio USD
-
-### Visualizações
-
-1. Receita por Plano
-2. Receita por Região
-3. Receita por Ciclo de Faturamento
-4. Receita por Add-on (EA Play, Minecraft Pass, Call of Duty Pass)
-5. Novos vs. Renovação
-6. Evolução Mensal da Receita
+### Tecnologias
+- Excel
 
 ### Como usar
+Abra a planilha `.xlsx` no Microsoft Excel.
 
-1. Abra `Dashboard_Xbox_Professional.xlsx` no Microsoft Excel.
-2. Na aba **Parâmetros**, edite as células em **amarelo** (preços, metas, descontos, CAC, câmbio).
-3. Base, KPIs e gráficos recalculam automaticamente.
-4. Para simular cenários (ex.: preço do Ultimate +10%), altere os amarelos e observe o impacto.
+### Estrutura
+Consulte a árvore do repositório para a organização exata de pastas e arquivos.
 
-> As fórmulas dependem do motor de cálculo do Excel — recomenda-se abrir no Excel, não em editores sem suporte a fórmulas nativas.
+### Testes
+Não há contagem de testes registrada nesta metadata. Adicione e execute testes apropriados à linguagem (pytest para Python, ./mvnw test para Java, npm test para JavaScript/TypeScript).
 
-### Decisões de modelagem
-
-- **Fonte única de verdade para preços**: a Base não guarda valores — puxa tudo da Parâmetros via fórmulas, então cenários recalculam em cascata;
-- **Camada de cálculo separada da apresentação**: o Dashboard só lê agregações da aba Cálculos — mesmo princípio de separation of concerns de um BI;
-- **`SUMIFS` como motor de agregação**: soma condicional multi-critério nativa, sem VBA e sem dependência externa.
+### Licença
+MIT
 
 ### Autor
-
-**Kelvin Oliveira** — [GitHub](https://github.com/KelvinOliveiraCode) · [LinkedIn](https://www.linkedin.com/in/kelvin-oliveira-code/)
+Kelvin Oliveira — github.com/KelvinOliveiraCode
 
 ---
 
-## 🇺🇸 English
+# Xbox Dashboard — Xbox Game Pass Sales in Excel
 
-An executive sales dashboard in **Microsoft Excel** modeling the commercial operation of **Xbox Game Pass** — Core, Standard and Ultimate plans, add-ons and billing cycles. The workbook is organized in 5 sheets with strict separation between parameters, transactional base, calculation layer (`SUMIFS`) and presentation: edit one yellow cell and the base, KPIs and 6 executive charts all recalculate — scenario simulation without touching a single formula.
+![status: concluido](https://img.shields.io/badge/status-concluido-green)  
+![license: MIT](https://img.shields.io/badge/license-MIT-blue)
 
-### Workbook architecture
+### Description
+Xbox Game Pass sales dashboard in Excel: KPIs, SUMIFS and scenario simulation.
 
-| Sheet | Role |
-|-------|------|
-| **Parâmetros** | The only editable sheet. Yellow cells: plan prices, targets, campaign discounts, CAC and USD/BRL exchange rate. |
-| **Base de Dados** | Demo transactions. Revenue, Cost and Profit are formulas pulling prices from Parâmetros — the base never holds static values. |
-| **Cálculos** | Aggregation layer via `SUMIFS` by Plan, Region, Billing Cycle, Add-on, New/Renewal and Monthly Evolution. |
-| **Dashboard** | KPI cards + 6 executive charts reacting to parameters. |
-| **Instruções** | Embedded user guide. |
+### What it does
+Xbox Game Pass sales dashboard in Excel: KPIs, SUMIFS and scenario simulation.
 
-### KPIs
-
-Total Revenue · Subscribers · Total Profit · ARPU · Average Ticket · Profit Margin · % of Target Achieved (Revenue, Subscribers, USD rate)
-
-### Modeling decisions
-
-- **Single source of truth for prices**: the base pulls everything from Parâmetros via formulas, so scenarios recalculate in cascade;
-- **Calculation layer separated from presentation**: the Dashboard only reads aggregations — the same separation of concerns as a BI tool;
-- **`SUMIFS` as the aggregation engine**: native multi-criteria conditional sum, no VBA, no external dependencies.
+### Technologies
+- Excel
 
 ### How to use
+Open the `.xlsx` spreadsheet in Microsoft Excel.
 
-Open `Dashboard_Xbox_Professional.xlsx` in Excel, edit the yellow cells in **Parâmetros**, and watch the whole dashboard recalculate. Requires a full Excel engine (native formula support).
+### Structure
+Check the repository tree for the exact folder and file organization.
+
+### Tests
+No test count recorded in this metadata. Add and run tests appropriate for the language (pytest for Python, ./mvnw test for Java, npm test for JavaScript/TypeScript).
+
+### License
+MIT
 
 ### Author
-
-**Kelvin Oliveira** — [GitHub](https://github.com/KelvinOliveiraCode) · [LinkedIn](https://www.linkedin.com/in/kelvin-oliveira-code/)
+Kelvin Oliveira — github.com/KelvinOliveiraCode
