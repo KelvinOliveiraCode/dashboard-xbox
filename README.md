@@ -1,61 +1,59 @@
-# Dashboard Xbox — Game Pass (Dashboard de Vendas Executivo)
+# Dashboard Xbox — Vendas Xbox Game Pass em Excel
 
-Dashboard de vendas profissional desenvolvido em **Excel**, criado como solução para o desafio de transformar dados brutos em informações visuais claras e úteis para análise de desempenho e tomada de decisão baseada em dados.
+![status: concluido](https://img.shields.io/badge/status-concluido-green)  
+![licenca: MIT](https://img.shields.io/badge/licenca-MIT-blue)
 
-O modelo simula a operação comercial do **Xbox Game Pass** (planos Core, Standard e Ultimate, add-ons e ciclos de faturamento) e permite simular cenários alterando apenas os parâmetros de negócio.
+### Descrição
+Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários.
 
-## Arquivo
+### O que faz
+Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários.
 
-- `Dashboard_Xbox_Professional.xlsx` — arquivo principal com o dashboard concluído.
+### Tecnologias
+- Excel
 
-## Estrutura do Workbook
+### Como usar
+Abra a planilha `.xlsx` no Microsoft Excel.
 
-O arquivo é composto por 5 abas:
+### Estrutura
+Consulte a árvore do repositório para a organização exata de pastas e arquivos.
 
-| Aba | Descrição |
-|-----|-----------|
-| **Parâmetros** | Única aba que o usuário edita. Células em amarelo contêm preços, metas, CAC, desconto de campanha e câmbio USD/BRL. Qualquer alteração recalcula toda a base e o dashboard. |
-| **Base de Dados** | Registros de transações (dados demo/artificiais). As colunas de Receita, Custo e Lucro usam fórmulas que puxam os preços da aba Parâmetros. |
-| **Cálculos** | Agregações via `SUMIFS` por Plano, Região, Ciclo de Faturamento, Add-on, Novos/Renovação e Evolução Mensal. Totalmente automática. |
-| **Dashboard** | Cartões de KPI + 6 gráficos executivos que reagem automaticamente aos Parâmetros. |
-| **Instruções** | Guia de uso do dashboard. |
+### Testes
+Não há contagem de testes registrada nesta metadata. Adicione e execute testes apropriados à linguagem (pytest para Python, ./mvnw test para Java, npm test para JavaScript/TypeScript).
 
-## Principais Indicadores (KPIs)
+### Licença
+MIT
 
-- **Receita Total (R$)**
-- **Assinantes (un.)**
-- **Lucro Total (R$)**
-- **ARPU (R$)**
-- **Ticket Médio (R$)**
-- **Margem de Lucro**
-- **% de Meta Atingida** (Receita, Assinantes e Câmbio USD)
+### Autor
+Kelvin Oliveira — github.com/KelvinOliveiraCode
 
-## Visualizações
+---
 
-Seis gráficos executivos alimentados pelas agregações da aba Cálculos:
+# Xbox Dashboard — Xbox Game Pass Sales in Excel
 
-1. Receita por Plano
-2. Receita por Região
-3. Receita por Ciclo de Faturamento
-4. Receita por Add-on
-5. Novos vs Renovação
-6. Evolução Mensal da Receita
+![status: concluido](https://img.shields.io/badge/status-concluido-green)  
+![license: MIT](https://img.shields.io/badge/license-MIT-blue)
 
-## Como Reproduzir / Utilizar
+### Description
+Xbox Game Pass sales dashboard in Excel: KPIs, SUMIFS and scenario simulation.
 
-1. Abra o arquivo `Dashboard_Xbox_Professional.xlsx` no Microsoft Excel.
-2. Vá na aba **Parâmetros** e edite as células em **amarelo** (preços, metas, descontos, CAC, câmbio, etc.).
-3. O dashboard e os gráficos são recalculados automaticamente.
-4. Use filtros/segmentações no Excel para explorar as visões analíticas.
-5. Para simular cenários (ex.: aumentar o preço do Ultimate ou a meta de receita), basta alterar os valores amarelos e observar o impacto nos KPIs e gráficos.
+### What it does
+Xbox Game Pass sales dashboard in Excel: KPIs, SUMIFS and scenario simulation.
 
-> Observação: as fórmulas dependem de recursos do Excel para recálculo automático; recomenda-se abrir no Excel (não em editores que não suportam fórmulas nativas).
+### Technologies
+- Excel
 
-## Requisitos
+### How to use
+Open the `.xlsx` spreadsheet in Microsoft Excel.
 
-- Microsoft Excel (versão com suporte a gráficos e `SUMIFS`).
-- Nenhuma instalação adicional ou dependência externa.
+### Structure
+Check the repository tree for the exact folder and file organization.
 
-## Fonte de Dados
+### Tests
+No test count recorded in this metadata. Add and run tests appropriate for the language (pytest for Python, ./mvnw test for Java, npm test for JavaScript/TypeScript).
 
-Base de dados de transações contida na própria aba **Base de Dados** (dados artificiais/demo para fins de desafio), com campos como Data, Ciclo, Região, Canal, plano contratado e add-ons (EA Play, Minecraft Pass, Call of Duty Pass).
+### License
+MIT
+
+### Author
+Kelvin Oliveira — github.com/KelvinOliveiraCode
