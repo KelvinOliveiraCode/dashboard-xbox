@@ -1,59 +1,50 @@
-# Dashboard Xbox — Vendas Xbox Game Pass em Excel
+# dashboard-xbox
 
-![status: concluido](https://img.shields.io/badge/status-concluido-green)  
-![licenca: MIT](https://img.shields.io/badge/licenca-MIT-blue)
+![status: concluido](https://img.shields.io/badge/status-concluido-green)   ![licenca: MIT](https://img.shields.io/badge/licenca-MIT-blue)
 
-### Descrição
-Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários.
+## Resumo
 
-### O que faz
-Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários.
+Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários
 
-### Tecnologias
-- Excel
+## Problema / por que existe
 
-### Como usar
-Abra a planilha `.xlsx` no Microsoft Excel.
+O projeto oferece um guia, modelo ou plano de estudo para um tema especifico, com foco em praticidade e aplicacao direta.
 
-### Estrutura
-Consulte a árvore do repositório para a organização exata de pastas e arquivos.
+## O que contem
 
-### Testes
-Não há contagem de testes registrada nesta metadata. Adicione e execute testes apropriados à linguagem (pytest para Python, ./mvnw test para Java, npm test para JavaScript/TypeScript).
+Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários
 
-### Licença
-MIT
+## Como usar
 
-### Autor
-Kelvin Oliveira — github.com/KelvinOliveiraCode
+Consulte os arquivos do repositorio. Abra cada documento e aplique as orientacoes no contexto desejado.
 
----
+## Estrutura do projeto
 
-# Xbox Dashboard — Xbox Game Pass Sales in Excel
+- contexto.txt, Dashboard_Xbox_Professional.xlsx, LICENSE, README.en.md, README.md
 
-![status: concluido](https://img.shields.io/badge/status-concluido-green)  
-![license: MIT](https://img.shields.io/badge/license-MIT-blue)
 
-### Description
-Xbox Game Pass sales dashboard in Excel: KPIs, SUMIFS and scenario simulation.
+## Tecnologias
 
-### What it does
-Xbox Game Pass sales dashboard in Excel: KPIs, SUMIFS and scenario simulation.
+Documentacao / guia (sem codigo de aplicacao).
 
-### Technologies
-- Excel
+## Trade-offs e decisões
 
-### How to use
-Open the `.xlsx` spreadsheet in Microsoft Excel.
+- Formato aberto (markdown, texto, planilha) para facilitar adaptacao.
+- Foco em conteudo pratico e aplicavel.
 
-### Structure
-Check the repository tree for the exact folder and file organization.
+## Limitações conhecidas
 
-### Tests
-No test count recorded in this metadata. Add and run tests appropriate for the language (pytest for Python, ./mvnw test for Java, npm test for JavaScript/TypeScript).
+- Guia de referencia; nao substitui ferramenta automatizada.
 
-### License
-MIT
+## Testes
 
-### Author
-Kelvin Oliveira — github.com/KelvinOliveiraCode
+Nao se aplica (conteudo de referencia).
+
+## Licença
+
+Distribuído sob a licenca MIT. Consulte o arquivo `LICENSE` do repositorio.
+
+## Autor
+
+Kelvin Oliveira, https://github.com/KelvinOliveiraCode
+Portfolio: https://kelvinoliveiracode.github.io/portfolio/
