@@ -1,51 +1,100 @@
 # dashboard-xbox
 
-[![Guide/Documentation]   ![status: done](https://img.shields.io/badge/status-done-green)   ![license: MIT](https://img.shields.io/badge/license-MIT-blue)
+<div align="center">
 
-## Summary
+**English** · [Português (Brasil)](README.md)
 
-Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários | Xbox Game Pass sales dashboard in Excel
-## Problem / Why it exists
+</div>
 
-The project addresses a practical scope and automates a task that, done manually, is repetitive and error-prone. The focus is on turning data or processes into reliable output, with readable, testable, and extensible code.
-## Architecture
+[![Docs](https://img.shields.io/badge/Docs-Guide-green?style=flat-square)](.) [![MIT License](https://img.shields.io/badge/License-MIT-f4c430?style=flat-square)](LICENSE)
 
-Code files (4):
-- `README.en.md`
-- `README.md`
-- `Dashboard_Xbox_Professional.xlsx`
-- `contexto.txt`
-## Design Patterns and Techniques Identified
+### Xbox Game Pass sales dashboard in Excel
 
-- Documentation/Guide
-- Reference material
-## What it does
+---
 
-Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários | Xbox Game Pass sales dashboard in Excel
-## How to run
+## What it is
+
+Xbox Game Pass sales dashboard in Excel
+
+---
+
+## Quick Start
 
 Consult the repository files for usage instructions.
-## Project Structure
 
-- `README.en.md`
-- `README.md`
-- `Dashboard_Xbox_Professional.xlsx`
-- `contexto.txt`
-## Trade-offs and Technical Decisions
+## How it works
 
-- Open format (markdown, spreadsheet, text) to facilitate adaptation and versioning.
-- Focus on practical, directly applicable content.
-## Known Limitations
+Clean, modular structure with separation of concerns.
 
-- Reference guide; does not replace an automated tool.
-- May become outdated as tools/versions evolve.
-## Tests
+---
 
-No automated tests detected (documentation/guide project).
+## Capabilities
+
+| Capability | Description |
+|------------|-------------|
+| Reference Format | Markdown / Excel / Text ,  version-controlled, diffable |
+| Practical Focus | Actionable content for immediate application |
+| No Dependencies | Open with any editor, no tooling required |
+
+
+---
+
+
+
+---
+
+## FAQ
+
+<details>
+<summary><strong>What is this project?</strong></summary>
+
+A documentation study/project demonstrating Documentation/Guide, Reference material.
+
+</details>
+
+<details>
+<summary><strong>How do I run it?</strong></summary>
+
+See [Quick Start](#quick-start) for copy-paste commands.
+
+</details>
+
+<details>
+<summary><strong>Are there tests?</strong></summary>
+
+No automated tests in this repository.
+
+</details>
+
+<details>
+<summary><strong>Can I use this in production?</strong></summary>
+
+This is a **study/portfolio project**. Review and harden (auth, persistence, monitoring, etc.) before production use.
+
+</details>
+
+
+
+---
+
+## Documentation
+
+- **Source Code** ,  Browse the `src/` directory for implementation details
+- **API Reference** ,  N/A
+- **Architecture Diagram** ,  See [architecture.mermaid](docs/architecture.mermaid) (if present)
+- **Changelog** ,  [CHANGELOG.md](CHANGELOG.md) (if present)
+- **Contributing** ,  [CONTRIBUTING.md](CONTRIBUTING.md) (if present)
+
 ## License
 
-Distributed under the MIT License. See the `LICENSE` file in this repository.
-## Author
+[MIT](LICENSE) ,  Kelvin Oliveira
 
-Kelvin Oliveira ,  https://github.com/KelvinOliveiraCode
-Portfolio: https://kelvinoliveiracode.github.io/portfolio/
+---
+
+<div align="center">
+
+**Built with** · Documentation
+
+**Author** · [Kelvin Oliveira](https://github.com/KelvinOliveiraCode) · [Portfolio](https://kelvinoliveiracode.github.io/portfolio/)
+
+</div>
