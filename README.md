@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**English** · [Português (Brasil)](README.md)
+[English](README.en.md) · **Português (Brasil)**
 
 </div>
 
@@ -18,13 +18,13 @@ Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cená
 
 ---
 
-## Quick Start
+## Início Rápido
 
-Consult the repository files for usage instructions.
+Consulte os arquivos do repositório para instruções de uso.
 
 ## Como funciona
 
-Clean, modular structure with separation of concerns.
+Estrutura limpa e modular com separação de responsabilidades.
 
 ---
 
