@@ -14,7 +14,7 @@
 
 ## O que é
 
-Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários | Xbox Game Pass sales dashboard in Excel
+Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários
 
 ---
 
