@@ -1,100 +1,61 @@
 # dashboard-xbox
 
-<div align="center">
-
 [English](README.en.md) · **Português (Brasil)**
 
-</div>
-
-[![Docs](https://img.shields.io/badge/Docs-Guide-green?style=flat-square)](.) [![MIT License](https://img.shields.io/badge/License-MIT-f4c430?style=flat-square)](LICENSE)
-
-### Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários
-
----
+[![Excel](https://img.shields.io/badge/Excel-xlsx-217346?style=flat-square&logo=microsoftexcel)](#) [![MIT License](https://img.shields.io/badge/License-MIT-f4c430?style=flat-square)](LICENSE)
 
 ## O que é
 
-Dashboard de vendas Xbox Game Pass em Excel: KPIs, SUMIFS e simulação de cenários
+**Dashboard de vendas do Xbox Game Pass feito em Excel** (desafio de organização e visualização de dados): transforma uma base de vendas bruta em KPIs, tabelas de cálculo (SUMIFS/participação) e um painel visual. É um arquivo `.xlsx` com 5 abas: Parâmetros, Base de Dados, Cálculos, Dashboard e Instruções.
 
----
+## Status
 
-## Início Rápido
+Arquivo Excel concluído (desafio). Indicado para abrir no Excel/LibreOffice/Google Sheets.
 
-Consulte os arquivos do repositório para instruções de uso.
+## Funcionalidades
 
-## Como funciona
+- **Aba Parâmetros**: planos e preços (Core/Standard/Ultimate, mensal/trimestral/anual), add-ons (EA Play, Minecraft Pass, Call of Duty Pass), metas e premissas configuráveis.
+- **Aba Base de Dados**: 1.200 vendas com ID, data, plano, ciclo, região, canal, add-ons, tipo (novo/renovação), quantidade, receita, custo e lucro.
+- **Aba Cálculos**: receita por plano, por região, participação e agregados (SUMIFS).
+- **Aba Dashboard**: KPIs (Receita Total, Assinantes, Lucro Total, ARPU, Ticket Médio, Margem), atingimento de meta e visão analítica com gráficos.
+- **Aba Instruções**: como usar e o que alterar com segurança.
 
-Estrutura limpa e modular com separação de responsabilidades.
+### KPIs (a partir da base, verificados pelo agente no arquivo)
 
----
+| KPI | Valor |
+|-----|-------|
+| Receita total | R$ 1.155.626,77 |
+| Assinantes | 21.915 |
+| Lucro total | R$ 892.646,77 |
+| ARPU | R$ 52,73 |
+| Ticket médio | R$ 963,02 |
+| Margem de lucro | 77,2% |
 
-## Capacidades
+## Estrutura do repositório
 
-| Capacidade | Descrição |
-|------------|-------------|
-| Formato de Referência | Markdown / Excel / Texto ,  versionável, diffável |
-| Foco Prático | Conteúdo acionável para aplicação imediata |
-| Sem Dependências | Abre em qualquer editor, sem tooling necessário |
+```
+dashboard-xbox/
+├── Dashboard_Xbox_Professional.xlsx   # o dashboard (5 abas)
+├── contexto.txt                        # briefing/desafio
+└── README · LICENSE
+```
 
+## Como usar
 
----
+1. Abra `Dashboard_Xbox_Professional.xlsx` no Excel/LibreOffice/Google Sheets.
+2. Use a aba 'Instruções' para orientação.
+3. Edite apenas as células amarelas da aba 'Parâmetros' (as demais são automáticas).
 
+## Testes e qualidade
 
+Não há código/testes automatizados — é um arquivo Excel. A validação foi feita abrindo o arquivo e conferindo as abas, os cálculos e os KPIs (ver tabela acima).
 
----
+## Processo de desenvolvimento
 
-## Perguntas Frequentes
+Projeto individual de Kelvin Oliveira, construído com agentes de IA orquestrados e revisado pelo autor. A modelagem das abas, os cálculos e a revisão são do autor.
 
-<details>
-<summary><strong>O que é este projeto?</strong></summary>
+## Licença e autor
 
-Um estudo/projeto em documentação demonstrando Documentation/Guide, Reference material.
+MIT — Copyright (c) 2026 Kelvin Rebelo de Oliveira.
 
-</details>
-
-<details>
-<summary><strong>Como executar?</strong></summary>
-
-Veja [Início Rápido](#início-rápido) para comandos copiáveis.
-
-</details>
-
-<details>
-<summary><strong>Há testes?</strong></summary>
-
-Nenhum teste automatizado neste repositório.
-
-</details>
-
-<details>
-<summary><strong>Posso usar em produção?</strong></summary>
-
-Este é um **projeto de estudo/portfólio**. Revise e endureça (auth, persistência, monitoramento, etc.) antes de usar em produção.
-
-</details>
-
-
-
----
-
-## Documentação
-
-- **Código-Fonte** ,  Navegue pelo diretório `src/` para detalhes de implementação
-- **Referência da API** ,  N/A
-- **Diagrama de Arquitetura** ,  Veja [architecture.mermaid](docs/architecture.mermaid) (se presente)
-- **Changelog** ,  [CHANGELOG.md](CHANGELOG.md) (se presente)
-- **Contribuindo** ,  [CONTRIBUTING.md](CONTRIBUTING.md) (se presente)
-
-## Licença
-
-[MIT](LICENSE) ,  Kelvin Oliveira
-
----
-
-<div align="center">
-
-**Construído com** · Documentação
-
-**Autor** · [Kelvin Oliveira](https://github.com/KelvinOliveiraCode) · [Portfolio](https://kelvinoliveiracode.github.io/portfolio/)
-
-</div>
+**Autor**: [Kelvin Oliveira](https://github.com/KelvinOliveiraCode) · [Portfólio](https://kelvinoliveiracode.github.io/portfolio/)
